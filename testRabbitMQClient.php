@@ -8,9 +8,9 @@ $client = new rabbitMQClient("testRabbitMQ.ini","testServer");
 
 
 $request = array();
-$request['type'] = "login";
+$request['type'] = "490db";
 //Change these to username and pass for mysql login user/pass
-$request['username'] = "root";
+$request['username'] = "admin";
 $request['password'] = "password";
 $request['message'] = "HI";
 $response = $client->send_request($request);

@@ -33,8 +33,10 @@ public function validateLogin($username,$password)
                 {
                         echo "$un not found in database!";
                 }
+
                 echo "Check if password matches for $username".PHP_EOL;
-                if ($row["password"] == $pw) {
+                
+		if ($row["password"] == $pw) {
                         echo "Password matches for $username".PHP_EOL;
                         return 1;
                 }
